@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class FirstServlet extends HttpServlet  {
    @Override
-    public void service (ServletRequest req, ServletResponse res) throws ServletException, IOException{
+    public void service (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
        res.getWriter().write("Hello this is my first servlet");
    }
 }
