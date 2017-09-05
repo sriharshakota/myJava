@@ -1,20 +1,23 @@
 package com.example.servlet;
 
+
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+
+
 
 /**
  * Created by sriharshakota on 8/16/17.
  */
 
+//@WebServlet(urlPatterns = ("/createAccount"))
 public class CreateAccountServlet extends HttpServlet {
     @Override
     public void service (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -34,12 +37,20 @@ public class CreateAccountServlet extends HttpServlet {
             preparedStatement.setString(3,lName);
             preparedStatement.setDouble(4,Double.parseDouble(balance));
             preparedStatement.executeUpdate();
+
+            res.getWriter().write("Account has been created");
+
+            //RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/accountsList");
+            //dispatch your request to accountList.jsp
+            //dispatcher.forward(req, res);
+            preparedStatement.close();
+
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        res.getWriter().write("Account Has been Created");
     }
 }

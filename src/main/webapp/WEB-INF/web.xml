@@ -13,17 +13,30 @@
     <servlet-name>Second Page</servlet-name>
     <servlet-class>com.example.servlet.SecondServlet</servlet-class>
   </servlet>
-
+<servlet>
+  <servlet-name>create Account</servlet-name>
+  <servlet-class>com.example.servlet.CreateAccountServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>create Account</servlet-name>
+  <url-pattern>/createAccount</url-pattern>
+</servlet-mapping>
   <servlet>
-    <servlet-name>Create Account</servlet-name>
-    <servlet-class>com.example.servlet.CreateAccountServlet</servlet-class>
+    <servlet-name>Account List</servlet-name>
+    <servlet-class>com.example.servlet.AccountListServlet</servlet-class>
   </servlet>
-
+  <servlet-mapping>
+    <servlet-name>Account List</servlet-name>
+    <url-pattern>/accountsList</url-pattern>
+  </servlet-mapping>
   <servlet>
-    <servlet-name>Find Balance</servlet-name>
-    <servlet-class>com.example.servlet.FindBalanceServlet</servlet-class>
+    <servlet-name>Delete Account</servlet-name>
+    <servlet-class>com.example.servlet.DeleteAccount</servlet-class>
   </servlet>
-
+  <servlet-mapping>
+    <servlet-name>Delete Account</servlet-name>
+    <url-pattern>/deleteaccount</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>First Page</servlet-name>
     <url-pattern>/firstservlet</url-pattern>
@@ -34,13 +47,4 @@
     <url-pattern>/secondservlet</url-pattern>
   </servlet-mapping>
 
-  <servlet-mapping>
-    <servlet-name>Create Account</servlet-name>
-    <url-pattern>/createAccount</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>Find Balance</servlet-name>
-    <url-pattern>/findbalance</url-pattern>
-  </servlet-mapping>
 </web-app>

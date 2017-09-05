@@ -1,5 +1,6 @@
 package com.example.servlet;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +13,7 @@ import java.sql.*;
  * Created by sriharshakota on 8/16/17.
  */
 
+@WebServlet(urlPatterns = ("/findbalance"))
 public class FindBalanceServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -45,7 +47,9 @@ public class FindBalanceServlet extends HttpServlet {
             e.printStackTrace();
         }
             if(check){
-                res.getWriter().write( "balance in "+id+" account is "+ balance);}
+                RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/accountsList");
+                //dispatch your request to accountList.jsp
+                dispatcher.forward(req, res);}
             else{
                 res.getWriter().write( "Account with id "+ id + "Not found");
             }
