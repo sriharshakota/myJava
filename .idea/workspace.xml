@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c945f74a-1005-45d0-81c4-96fe84f2641b" name="Default" comment="bank example">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/Java/com/example/AccountDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/routing/javascript/findController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/routing/javascript/updateController.js" />
+    <list default="true" id="c945f74a-1005-45d0-81c4-96fe84f2641b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/CreateAccountServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/CreateAccountServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/DeleteAccount.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/DeleteAccount.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/FindBalanceServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/FindBalanceServlet.class" />
@@ -12,23 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/DeleteAccount.class" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/DeleteAccount.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/FindBalanceServlet.class" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/FindBalanceServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/model/Account.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/model/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/servlet/AccountListServlet.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/servlet/AccountListServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/servlet/CreateAccountServlet.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/servlet/CreateAccountServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/servlet/DeleteAccount.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/servlet/DeleteAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/servlet/FindBalanceServlet.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/servlet/FindBalanceServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/example/servlet/UpdateServlet.java" afterPath="$PROJECT_DIR$/src/main/Java/com/example/servlet/UpdateServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/CreateAccount.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/CreateAccount.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/accounts.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/accounts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/deleteaccount.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/deleteaccount.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/findbalance.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/findbalance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/javascript/accountListController.js" afterPath="$PROJECT_DIR$/src/main/webapp/routing/javascript/accountListController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/javascript/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/routing/javascript/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/javascript/createAccountModule.js" afterPath="$PROJECT_DIR$/src/main/webapp/routing/javascript/createAccountModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/sidebar.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/routing/updateaccount.html" afterPath="$PROJECT_DIR$/src/main/webapp/routing/updateaccount.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
@@ -801,7 +781,7 @@
       <workItem from="1504639633187" duration="828000" />
       <workItem from="1504642518443" duration="1881000" />
       <workItem from="1504740841267" duration="9786000" />
-      <workItem from="1504803781746" duration="4275000" />
+      <workItem from="1504803781746" duration="4289000" />
     </task>
     <task id="LOCAL-00001" summary="bank example">
       <created>1502946719614</created>
@@ -810,11 +790,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502946719614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bank example">
+      <created>1504808077142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1504808077143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74628000" />
+    <option name="totallyTimeSpent" value="74642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

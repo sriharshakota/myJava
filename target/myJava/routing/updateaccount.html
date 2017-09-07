@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-controller="updateController">
+<form>
+    Account Id <input name="id" ng-model="account.id">
+    <br>
+    First Name <input name="firstName" ng-model="account.firstName">
+    <br/>
+    Last Name <input name="lastName" ng-model="account.lastName">
+    <br/>
+    Balance <input type="number" name="balance" ng-model="account.balance">
+    <br/>
+    <input type="submit" value="Update Account" ng-click="updateAccount()">
+    <br>
+    <br>
+    <br>
+</form>
+</body>
+</html>
