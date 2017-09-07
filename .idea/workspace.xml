@@ -769,7 +769,7 @@
       <workItem from="1504639633187" duration="828000" />
       <workItem from="1504642518443" duration="1881000" />
       <workItem from="1504740841267" duration="9786000" />
-      <workItem from="1504803781746" duration="4580000" />
+      <workItem from="1504803781746" duration="4800000" />
     </task>
     <task id="LOCAL-00001" summary="bank example">
       <created>1502946719614</created>
@@ -789,7 +789,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74933000" />
+    <option name="totallyTimeSpent" value="75153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
