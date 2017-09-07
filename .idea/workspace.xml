@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c945f74a-1005-45d0-81c4-96fe84f2641b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/CreateAccountServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/CreateAccountServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/DeleteAccount.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/DeleteAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/example/servlet/FindBalanceServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/example/servlet/FindBalanceServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/CreateAccountServlet.class" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/CreateAccountServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/DeleteAccount.class" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/DeleteAccount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/FindBalanceServlet.class" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/classes/com/example/servlet/FindBalanceServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myJava/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/myJava/WEB-INF/web.xml" />
-    </list>
+    <list default="true" id="c945f74a-1005-45d0-81c4-96fe84f2641b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -781,7 +769,7 @@
       <workItem from="1504639633187" duration="828000" />
       <workItem from="1504642518443" duration="1881000" />
       <workItem from="1504740841267" duration="9786000" />
-      <workItem from="1504803781746" duration="4289000" />
+      <workItem from="1504803781746" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="bank example">
       <created>1502946719614</created>
@@ -801,7 +789,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74642000" />
+    <option name="totallyTimeSpent" value="74933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
