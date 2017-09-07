@@ -1,5 +1,8 @@
 package com.example.servlet;
 
+import com.example.AccountDAO;
+import com.example.model.Account;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,32 +23,14 @@ public class DeleteAccount extends HttpServlet {
         int id = Integer.parseInt(req.getParameter("id")) ;
 
 
+        AccountDAO dao = new AccountDAO();
+
+
         try{
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/postgres","postgres" , "postgres");
+            dao.delete(id);
 
-
-            PreparedStatement preparedStatement = null;
-            PreparedStatement statement2 = null;
-            preparedStatement = connection.prepareStatement("select * from bankAccounts where id = ?");
-            preparedStatement.setInt(1,id);
-            ResultSet rs = preparedStatement.executeQuery();
-            if (rs.next()) {
-                if (rs.getInt("id") == id) {
-
-                    statement2 = connection.prepareStatement("DELETE FROM bankAccounts WHERE id = ?");
-                    statement2.setInt(1, id);
-                    statement2.executeUpdate();
-                }
-            }
-            //preparedStatement.executeUpdate();
-            //res.getWriter().write( "Account with  id "+ id + "has been deleted");
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
     }

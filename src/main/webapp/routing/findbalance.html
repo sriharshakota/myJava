@@ -5,13 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<form action="findbalance">
-    Account Id <input name="id">
+<h2>{{heading}}</h2>
 
-    <input type="submit" value="Check Balance">
+<form action="findbalance">
+    Account Id <input name="id" ng-model="account.id">
+
+    <input type="submit" value="Check Balance" ng-click="findAccount()">
     <br>
     <br>
     <br>
 </form>
+
 </body>
 </html>

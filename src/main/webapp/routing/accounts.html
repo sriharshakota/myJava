@@ -1,11 +1,25 @@
-{{heading}}
+<h2>{{heading}}</h2>
 
-<table ng-controller="accountListController" >
-    <tr ng-repeat="account in accounts">
-        <td>{{account.id}}</td>
-        <td>{{account.firstName}}</td>
-        <td>{{account.lastName}}</td>
-        <td>{{account.balance}}</td>
-    </tr>
-</table>
 <br/>
+<div ng-controller="accountListController">
+<div class="table-responsive">
+    <table class="table table-bordered table-condensed table-hover" >
+        <tr>
+            <td class="clickable-item col-md-3"><b>Id</b></td>
+            <td class="clickable-item col-md-3"><b>First Name</b> </td>
+            <td class="clickable-item col-md-3"><b>Last Name</b> </td>
+            <td class="clickable-item col-md-3"><b>Balance</b> </td>
+        </tr>
+        <tr ng-repeat="account in accounts" >
+            <td data-title="'id'"  sortable="'id'" class="clickable-item col-md-3" >{{ account.id }}</td>
+            <td data-title="'firstName'"  sortable="'firstName'" class="clickable-item col-md-3" >{{ account.firstName }}</td>
+            <td data-title="'lastName'"  sortable="'lastName'" class="clickable-item col-md-3" >{{ account.lastName }}</td>
+            <td data-title="'balance'"  sortable="'balance'" class="clickable-item col-md-3" >{{ account.balance }}</td>
+
+        </tr>
+        <tr ng-if="!accounts || accounts.length === 0">
+            <td colspan="4">No accounts exist.  Please add some.</td>
+        </tr>
+    </table>
+</div>
+</div>

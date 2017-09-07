@@ -15,7 +15,7 @@ app.controller("createAccountController", function($scope,$http,$log,$location){
                 $location.url('/accounts');
             })
             .error(function(error){
-                $log.debug("Error Retriving Employee");
+                $log.debug("Error creating Account");
             });
     }
 });

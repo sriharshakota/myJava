@@ -11,12 +11,12 @@
             })
             .when("/findbalance", {
                 templateUrl : "findbalance.html",
-                //controller:"samsungCtrl"
+                controller:"findController"
 
             })
             .when("/updateaccount", {
                 templateUrl : "updateaccount.html",
-               // controller:"lenovoCtrl"
+                controller:"updateController"
 
             })
             .when("/deleteaccount", {
@@ -29,6 +29,7 @@
                  controller:"accountListController"
 
             })
+
             .otherwise({
                 templateUrl: 'error.html'
             });

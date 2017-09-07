@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<form action="updateaccount">
-    Account Id <input name="id">
+<body ng-controller="updateController">
+<h2>{{heading}}</h2>
+
+<form>
+    Account Id <input name="id" ng-model="account.id">
     <br>
-    First Name <input name="firstName">
+    First Name <input name="firstName" ng-model="account.firstName">
     <br/>
-    Last Name <input name="lastName">
+    Last Name <input name="lastName" ng-model="account.lastName">
     <br/>
-    <input type="submit" value="Update Account">
+    Balance <input type="number" name="balance" ng-model="account.balance">
+    <br/>
+    <input type="submit" value="Update Account" ng-click="updateAccount()">
     <br>
     <br>
     <br>

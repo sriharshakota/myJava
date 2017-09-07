@@ -37,6 +37,22 @@
     <servlet-name>Delete Account</servlet-name>
     <url-pattern>/deleteaccount</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>Find Account</servlet-name>
+    <servlet-class>com.example.servlet.FindBalanceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Find Account</servlet-name>
+    <url-pattern>/findbalance</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Update Account</servlet-name>
+    <servlet-class>com.example.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Update Account</servlet-name>
+    <url-pattern>/updateaccount</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>First Page</servlet-name>
     <url-pattern>/firstservlet</url-pattern>

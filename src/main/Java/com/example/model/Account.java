@@ -32,5 +32,13 @@ public class Account {
     public int getid() {
         return id;
     }
+
+    public String getFirstName() {
+        return fName;
+    }
+
+    public String getLastName() {
+        return lName;
+    }
 }
 

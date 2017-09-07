@@ -16,8 +16,6 @@ check.controller("accountListController", function($scope,$http,$log,$location){
         $http.get('/accountsList')
             .success(function(data){
                 $scope.accounts = data;
-                console.log(data);
-                //$location.url('/accounts')
             })
             .error(function(error){
                 $log.debug("Error Retriving Employee");

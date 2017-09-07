@@ -2,6 +2,9 @@ package com.example.servlet;
 
 
 
+import com.example.AccountDAO;
+import com.example.model.Account;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,7 +20,6 @@ import java.sql.*;
  * Created by sriharshakota on 8/16/17.
  */
 
-//@WebServlet(urlPatterns = ("/createAccount"))
 public class CreateAccountServlet extends HttpServlet {
     @Override
     public void service (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -26,31 +28,19 @@ public class CreateAccountServlet extends HttpServlet {
         String balance = req.getParameter("balance");
         int id = (int) (Math.random() * 10000);
 
+        Account account = new Account ();
+        account.setid(id);
+        account.setfName(fName);
+        account.setlName(lName);
+        account.setbalance(Double.parseDouble(balance));
+
+        AccountDAO dao = new AccountDAO();
+
         try{
-            Class.forName("org.postgresql.Driver");
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:5432/postgres","postgres" , "postgres");
+            dao.create(account);
 
-            PreparedStatement preparedStatement = connection.prepareStatement("INSERT into bankAccounts VALUES(?,?,?,?)");
-            preparedStatement.setInt(1,id);
-            preparedStatement.setString(2,fName);
-            preparedStatement.setString(3,lName);
-            preparedStatement.setDouble(4,Double.parseDouble(balance));
-            preparedStatement.executeUpdate();
-
-            res.getWriter().write("Account has been created");
-
-            //RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/accountsList");
-            //dispatch your request to accountList.jsp
-            //dispatcher.forward(req, res);
-            preparedStatement.close();
-
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
     }
 }
